@@ -1,0 +1,164 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Yuejie Chi</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category"><img class="menu" src="yale_logo.png" width="100px" align="center"></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yuejie Chi</h1>
+</div>
+ 
+
+<h2> Nonconvex Statistical Learning and Estimation </h2>
+<p></p>
+<p><img src="photos/nonconvex_surface.png" width="300" style="float:right; margin:0px 10px -5px -10px;" /></p>
+<p> To process high-dimensional data created by modern sensing modalities, it is necessary to exploit
+low-dimensional geometric structures of the information embedded in the data, including sparsity, low-rank structure, positivity, stationarity, and other structural constraints, in
+order to reduce the degrees of freedom to combat the curse of dimensionality. Notably, many of
+the most useful low-dimensional structures are naturally described using nonconvex constraints.
+
+
+<p> In recent years, statistical procedures have been developed to promote low-dimensional structures
+using convex relaxations, rather than directly attacking the nonconvex problems, exploiting the rich theory in convex analysis and convex optimization. However, by imposing convexity we pay our dues in computational guarantees. For example, in
+low-rank matrix estimation problems, convex relaxations typically require the run time to scale at
+least cubically in the matrix dimension. In contrast, a direct nonconvex approach only takes time (and also storage) proportional to reading the data, which is highly desirable when solving practical
+large-scale problems. The secret source that allows us to handle non-convexity
+is rooted in the fact that we are not interested in "generic" nonconvex problems, but rather,
+nonconvex problems arising in concrete signal and information processing scenarios. These scenarios
+typically provide us with much richer structural information. For example, it is discovered that,
+for several canonical information processing problems such as low-rank matrix completion, phase
+retrieval, and blind deconvolution, the natural non-convex formulations enjoy benign geometric
+structures, such that simple iterative algorithms, such as gradient descent and alternating minimization, can simultaneously achieve near-optimal statistical accuracy and low computational complexity.   </p>
+
+<h3> Overview </h3>
+<ul>
+<li><p><a href="https://www.nowpublishers.com/article/Details/MAL-079">Spectral Methods for Data Science: A Statistical Perspective</a> <a href="https://arxiv.org/abs/2012.08496">[Arxiv]</a>
+<br> Y. Chen, Y. Chi, J. Fan, and C. Ma, <i>Foundation and Trends in Machine Learning</i>, vol. 14, no. 5, pp. 566-806, 2021. </p> 
+
+<li> <p><a href="http://doi.org/10.1109/TSP.2019.2937282">Nonconvex Optimization Meets Low-Rank Matrix Factorization: An Overview</a> <a href="https://arxiv.org/pdf/1809.09573.pdf">[Arxiv]</a> <a href="talks/Nonconvex_overview_slides.pdf">[Slides]</a> 
+<br> Y. Chi, Y. M. Lu, and Y. Chen, <i>IEEE Trans. on Signal Processing</i>, vol. 67, no. 20, pp. 5239-5269, 2019.</p>
+
+<li> <p><a href="https://link.springer.com/chapter/10.1007/978-3-031-66497-7_7">Provably Accelerating Ill-Conditioned
+Low-Rank Estimation via Scaled Gradient Descent, Even with Overparameterization</a> <a href="https://arxiv.org/pdf/2310.06159.pdf">[Arxiv]</a> 
+<br> C. Ma, X. Xu, T. Tong and Y. Chi, <i>Explorations in the Mathematics of Data Science</i>, Springer, pp. 133-165, 2024.</p>
+ 
+<li> <p><a href="https://ieeexplore.ieee.org/document/8399563">Harnessing Structures in Big Data via Guaranteed Low-Rank Matrix Estimation</a> <a href="https://arxiv.org/pdf/1802.08397.pdf">[Arxiv]</a>
+<br> Y. Chen and Y. Chi, <i>IEEE Signal Processing Magazine</i>, vol. 35, no. 4, pp. 14-31, 2018. </p>
+
+</ul>
+
+<h3> Nonconvex Low-Rank Matrix Estimation</h3>
+<ul> 
+
+<li><p><a href="https://proceedings.mlr.press/v202/xu23o/xu23o.pdf">The Power of Preconditioning in Overparameterized Low-Rank Matrix Sensing</a> <a href="https://arxiv.org/abs/2302.01186">[Arxiv]</a>
+<br>X. Xu, Y. Shen, Y. Chi, and C. Ma, <i>International Conference on Machine Learning (ICML)</i>, 2023.</p> 
+
+<li><p><a href="https://jmlr.org/papers/volume22/20-1067/20-1067.pdf">Accelerating Ill-Conditioned Low-Rank Matrix Estimation via Scaled Gradient Descent</a> <a href="https://arxiv.org/pdf/2005.08898.pdf">[Arxiv]</a> <a href="https://github.com/Titan-Tong/ScaledGD">[Code]</a>
+<br>T. Tong, C. Ma, and Y. Chi, <i>Journal of Machine Learning Research</i>, vol. 22, no. 150, pp. 1-63, 2021.</p> 
+
+<li> <p><a href="http://doi.org/10.1007/s10208-019-09429-9">Implicit Regularization in Nonconvex Statistical Estimation: Gradient Descent Converges Linearly for Phase Retrieval, Matrix Completion and Blind Deconvolution</a> <a href="https://arxiv.org/pdf/1711.10467.pdf">[Arxiv]</a>
+<br> C. Ma, K. Wang, Y. Chi, and Y. Chen, <i>Foundations of Computational Mathematics</i>, vol. 20, pp. 451-632, 2020. Short version at ICML 2018.
+<br><b>2024 SIAM Activity Group on Imaging Science Best Paper Prize</b></p>
+
+
+<li><p><a href="https://ieeexplore.ieee.org/document/9398573">Low-Rank Matrix Recovery with Scaled Subgradient Methods: Fast and Robust Convergence Without the Condition Number</a> <a href="https://arxiv.org/pdf/2010.13364.pdf">[Arxiv]</a>  
+<br>T. Tong, C. Ma, and Y. Chi, <i>IEEE Trans. on Signal Processing</i>, vol. 69, pp. 2396-2409, 2021. Short version received <b>Audience Choice Award</b> at DSLW 2021.</p> 
+
+<li> <p><a href="https://ieeexplore.ieee.org/document/9317779">Nonconvex Matrix Factorization from Rank-One Measurements</a> <a href="https://arxiv.org/pdf/1802.06286.pdf">[Arxiv]</a>  
+<br> Y. Li, C. Ma, Y. Chen, and Y. Chi, <i>IEEE Trans. on Information Theory</i>, vol. 67, no. 3, pp. 1928-1950, 2021. Short version at AISTATS 2019. </p>
+
+<li> <p><a href="https://ieeexplore.ieee.org/document/9321745">Beyond Procrustes: Balancing-free Gradient Descent for Asymmetric Low-Rank Matrix Sensing</a> <a href="https://arxiv.org/abs/2101.05113">[Arxiv]</a>  
+<br>C. Ma, Y. Li, and Y. Chi, <i>IEEE Trans. on Signal Processing</i>, vol. 69, pp. 867-877, 2021. Short version at Asilomar 2019. </p> 
+
+<li> <p><a href="https://epubs.siam.org/doi/pdf/10.1137/19M1290000">Noisy Matrix Completion: Understanding Statistical Guarantees for Convex Relaxation via Nonconvex Optimization</a> <a href="https://arxiv.org/pdf/1902.07698.pdf">[Arxiv]</a>
+<br> Y. Chen, Y. Chi, J. Fan, C. Ma and Y. Yan, <i>SIAM Journal on Optimization</i>, vol. 30, no. 4, pp. 3098-3121, 2020. (Authors are listed alphabetically.)
+
+<li> <p><a href="https://academic.oup.com/imaiai/advance-article/doi/10.1093/imaiai/iaz009/5485504?guestAccessKey=e330a073-75c3-4de2-bcb4-d0492561f6f3">Nonconvex Low-Rank Matrix Recovery with Arbitrary Outliers via Median-Truncated Gradient Descent</a> <a href="https://arxiv.org/abs/1709.08114">[Arxiv]</a>
+<br> Y. Li, Y. Chi, H. Zhang, and Y. Liang, <i>Information and Inference: A Journal of the IMA</i>, vol. 9, no. 2, pp. 289-325, 2020. Short version at SampTA 2017.</p>
+
+</ul>
+
+<h3> Nonconvex Low-Rank Tensor Estimation</h3>
+<ul> 
+
+<li><p><a href="https://jmlr.org/papers/v23/21-1390.html">Scaling and Scalability: Provable Nonconvex Low-Rank Tensor Estimation from Incomplete Measurements</a> <a href="https://arxiv.org/pdf/2104.14526.pdf">[Arxiv]</a> <a href="https://github.com/Titan-Tong/ScaledGD">[Code]</a>
+<br>T. Tong, C. Ma, A. Prater-Bennette, E. Tripp, and Y. Chi, <i>Journal of Machine Learning Research</i>, vol. 23, no. 163, pp. 1-77, 2022. Short version at AISTATS 2022.</p>  
+
+<li> <p><a href="http://dx.doi.org/10.1214/20-AOS1986">Subspace Estimation from Unbalanced and Incomplete Data Matrices: $\ell_{2,\infty}$ Statistical Guarantees</a> <a href="https://arxiv.org/abs/1910.04267">[Arxiv]</a>
+<br> C. Cai, G. Li, Y. Chi, H. V. Poor, and Y. Chen, <i>The Annals of Statistics</i>, vol. 49, no. 2, pp. 944-967, 2021.</p>
+
+<li><p><a href="https://doi.org/10.1093/imaiai/iaad019">Fast and Provable Tensor Robust Principal Component Analysis via Scaled Gradient Descent</a> <a href="https://arxiv.org/abs/2206.09109">[Arxiv]</a> <a href="https://github.com/hdong920/Tensor_RPCA_ScaledGD">[Code]</a>
+<br>H. Dong, T. Tong, C. Ma, and Y. Chi, <i>Information and Inference: A Journal of the IMA</i>, vol. 12, no. 3, pp. 1716-1758, 2023.  </p> 
+
+<li><p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10095485">Deep Unfolded Tensor Robust PCA with Self-supervised Learning</a> <a href="https://arxiv.org/abs/2212.11346">[Arxiv]</a> <a href="https://github.com/hdong920/Tensor_RPCA_ScaledGD">[Code]</a>
+<br>H. Dong, M. Shah, S. Donegan, and Y. Chi, <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 2023. </p> 
+
+<li><p><a href="https://doi.org/10.1109/ICASSP43922.2022.9746705">Accelerating Ill-Conditioned Robust Low-Rank Tensor Regression</a> <a href="papers/tensor_scaledSM_icassp2022.pdf">[PDF]</a>
+<br>T. Tong, C. Ma, and Y. Chi, <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 2022.</p> 
+
+</ul>
+
+
+
+<h3> Phase Retrieval and Blind Deconvolution via Nonconvex Optimization</h3>
+
+<ul>
+<li> <p><a href="https://ieeexplore.ieee.org/document/9410615">Manifold Gradient Descent Solves Multi-channel Sparse Blind Deconvolution Provably and Efficiently</a> <a href="https://arxiv.org/pdf/1911.11167.pdf">[Arxiv]</a> 
+<br> L. Shi and Y. Chi, <i>IEEE Trans. on Information Theory</i>, vol. 67, no. 7, pp. 1-28, 2021. Short version at ICASSP 2020. </p> 
+
+<li> <p><a href="https://link.springer.com/article/10.1007/s10107-019-01363-6">Gradient Descent with Random Initialization: Fast Global Convergence for Nonconvex Phase Retrieval</a> <a href="papers/GD_random_init_main.pdf">[Main]</a> <a href="papers/GD_random_init_supp.pdf">[Supplementary]</a> <a href="https://arxiv.org/pdf/1803.07726.pdf">[Arxiv]</a>
+<br> Y. Chen, Y. Chi, J. Fan and C. Ma, <i>Mathematical Programming</i>, vol. 176, no. 1, pp. 5-37, 2019. (Authors are listed alphabetically.)</p>  
+
+<li> <p><a href="https://ieeexplore.ieee.org/document/8386800/">Median-Truncated Nonconvex Approach for Phase Retrieval with Outliers</a> <a href="https://arxiv.org/pdf/1603.03805.pdf">[Arxiv]</a>
+<br> H. Zhang, Y. Chi and Y. Liang, <i>IEEE Trans. on Information Theory</i>,  vol. 64, no. 11, pp. 7287-7310, 2018. Short version at ICML 2016.</p>
+
+<li> <p><a href="http://www.jmlr.org/papers/volume18/16-572/16-572.pdf">A Nonconvex Approach for Phase Retrieval: Reshaped Wirtinger Flow and Incremental Algorithms</a> <a href="https://github.com/hubevan/reshaped-Wirtinger-flow">[Code]</a>
+<br> H. Zhang, Y. Zhou, Y. Liang and Y. Chi, <i>Journal of Machine Learning Research</i>, vol. 18, no. 141, pp. 1-35, 2017.</p>
+
+<li> <p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7509600">Kaczmarz Method for Solving Quadratic Equations</a>
+<br> Y. Chi and Y. M. Lu, <i>IEEE Signal Processing Letters</i>, vol. 23, no. 9, pp. 1183 - 1187, 2016.</p>
+</ul>
+
+<h3> Nonconvex Super Resolution</h3>
+
+<ul>
+
+<li><p><a href="https://doi.org/10.1109/JSAIT.2023.3262689">Local Geometry of Nonconvex Spike Deconvolution from Low-Pass Measurements</a> <a href="https://arxiv.org/abs/2208.10073">[Arxiv]</a>
+<br>M. Ferreira Da Costa and Y. Chi, <i>IEEE Journal on Selected Areas in Information Theory</i>, vol. 4, pp. 1-15, 2023.</p> 
+
+</ul>
+
+<h3> Shallow Neural Networks </h3>
+<ul> 
+<li> <p><a href="https://ieeexplore.ieee.org/document/9089304">Guaranteed Recovery of One-Hidden-Layer Neural Networks via Cross Entropy</a> <a href="https://arxiv.org/pdf/1802.06463.pdf">[Arxiv]</a>
+ <br> H. Fu, Y. Chi, and Y. Liang, <i>IEEE Trans. on Signal Processing</i>, vol. 68, pp. 3225-3235, 2020. Short version at ISIT 2019. </p>
+ </ul>   
+
+<p><br /><br /></p>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
