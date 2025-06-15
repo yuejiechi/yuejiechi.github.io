@@ -1,0 +1,205 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Yuejie Chi</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category"><img class="menu" src="yale_logo.png" width="100px" align="center"></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yuejie Chi</h1>
+</div>
+ 
+
+<h2> Statistical and Algorithmic Foundations of Reinforcement Learning </h2>
+<p></p>
+
+<p><img src="photos/maze.png" width="250" style="float:right; margin:0px 10px 5px 10px;" /></p>
+<p>Reinforcement learning (RL), which is frequently modeled as
+learning and decision making in Markov decision processes (MDP), is garnering growing interest in recent
+years due to its remarkable success in practice. A core objective of RL is to search for a policy - based on
+a collection of noisy data samples - that approximately maximizes expected rewards in an MDP, without direct access to a precise description of the underlying model. In contemporary applications, it is increasingly more common to encounter environments with prohibitively large state and action space, thus challenging the paradigm of RL in terms of both sample and computation efficiencies. 
+
+<p>Broadly speaking, there are two common algorithmic approaches: model-based and model-free. In the model-based approach, one first learns to describe the unknown model using the data samples in hand, and then leverages the fitted model to perform planning - a task that can be accomplished by resorting to Bellman's principle of optimality. In comparison, the model-free approach attempts to compute the optimal policy (and the optimal value function) without learning the model explicitly, which lends itself to scenarios when a realistic model is difficult to construct or changes on the fly. There is a great interest in characterizing the trade-offs between sample complexity, computation complexity, and statistical accuracy of RL algorithms, and to design improved algorithms that achieve better trade-offs and meet new considerations. At the same time, we are actively pursuing applications of RL in real-world science and engineering applications such as wireless networks, graph mining and more.</p>
+
+ 
+<h3> Overview </h3> 
+
+<ul> 
+<li><p>Statistical and Algorithmic Foundations of Reinforcement Learning
+<br>Y. Chi, Y. Chen and Y. Wei, <i>INFORMS TutORials in Operations Research</i>, 2025. </p>
+<li><p>Sample Complexity of Reinforcement Learning: A Non-Asymptotic Perspective  
+<br> Y. Chen, Y. Chi, J. Fan, G. Li and Y. Wei, <i>Foundation and Trends in Statistics</i>, in preparation. (Authors are listed alphabetically.) </p> 
+
+</ul>
+
+<h3> Online RL with Exploration </h3> 
+
+<ul> 
+
+<li><p><a href="https://openreview.net/forum?id=ciUHD7jcT9">Incentivize without Bonus: Provably Efficient Model-based Online Multi-agent RL for Markov Games</a> <a href="http://arxiv.org/abs/2502.09780">[Arxiv]</a>
+<br>T. Yang, B. Dai, L. Xiao, and Y. Chi, <i>International Conference on Machine Learning (ICML)</i>, 2025. </p> 
+
+<li><p><a href="https://openreview.net/forum?id=SQnitDuow6">Value-Incentivized Preference Optimization: A Unified Approach to Online and Offline RLHF</a> <a href="https://arxiv.org/abs/2405.19320">[Arxiv]</a>
+<br>S. Cen, J. Mei, K. Goshvadi, H. Dai, T. Yang, S. Yang, D. Schuurmans, Y. Chi, and B. Dai, <i>International Conference on Learning Representations (ICLR)</i>, 2025. </p>    
+
+<li> <p><a href="https://doi.org/10.1093/imaiai/iaac034">Breaking the Sample Complexity Barrier to Regret-Optimal Model-free Reinforcement Learning</a> <a href="https://arxiv.org/pdf/2110.04645.pdf">[Arxiv]</a> 
+<br>G. Li, L. Shi, Y. Chen, and Y. Chi, <i>Information and Inference: A Journal of the IMA</i>, vol. 12, no. 2, pp. 969-1043, 2023. Short version at NeurIPS 2021 as a <b>spotlight</b> presentation. </p>
+
+<li><p><a href="https://openreview.net/forum?id=2e_VWzcU4j7">Sample-Efficient Reinforcement Learning Is Feasible for Linearly Realizable MDPs with Limited Revisiting</a> <a href="https://arxiv.org/pdf/2105.08024.pdf">[Arxiv]</a> 
+<br>G. Li, Y. Chen, Y. Chi, Y. Gu, and Y. Wei, <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2021.</p> 
+
+</ul> 
+
+
+
+<h3> Federated Reinforcement Learning </h3> 
+
+<ul> 
+
+<li><p><a href="https://jmlr.org/papers/volume26/24-0579/24-0579.pdf">The Blessing of Heterogeneity in Federated Q-Learning: Linear Speedup and Beyond</a> <a href="https://arxiv.org/abs/2305.10697">[Arxiv]</a>
+<br>J. Woo, G. Joshi, and Y. Chi, <i>Journal of Machine Learning Research</i>, vol. 26, no. 26, pp. 1-85, 2025. Short version at ICML 2023. </p> 
+
+<li><p><a href="https://openreview.net/forum?id=DUFD6vsyF8">Federated Natural Policy Gradient and Actor Critic Methods for Multi-task Reinforcement Learning</a> <a href="https://arxiv.org/abs/2311.00201">[Arxiv]</a>
+<br>T. Yang, S. Cen, Y. Wei, Y. Chen, and Y. Chi, <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2024. </p> 
+
+<li><p><a href="https://openreview.net/forum?id=6YIpvnkjUK">The Sample-Communication Complexity Trade-off in Federated Q-Learning</a> <a href="https://arxiv.org/abs/2408.16981">[Arxiv]</a>
+<br>S. Salgia and Y. Chi,  <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2024, <b>oral</b> presentation.  </p> 
+
+<li><p><a href="https://openreview.net/pdf?id=LIPGadocTe">Federated Offline Reinforcement Learning: Collaborative Single-Policy Coverage Suffices</a> <a href="https://arxiv.org/abs/2402.05876">[Arxiv]</a>
+<br>J. Woo, L. Shi, G. Joshi, and Y. Chi, <i> International Conference on Machine Learning (ICML)</i>, 2024.  </p> 
+
+</ul> 
+
+
+<h3> Robust Reinforcement Learning </h3> 
+
+<ul> 
+
+<li><p><a href="https://openreview.net/forum?id=fFBnsYRsPg">Breaking the Curse of Multiagency in Robust Multi-Agent Reinforcement Learning</a> <a href="https://arxiv.org/abs/2409.20067">[Arxiv]</a>
+<br>L. Shi*, J. Gai*, E. Mazumdar, Y. Chi, and A. Wierman, <i>International Conference on Machine Learning (ICML)</i>, 2025. </p> 
+
+<li><p><a href="https://openreview.net/pdf?id=qDw4FxMubj">Sample-Efficient Robust Multi-Agent Reinforcement Learning in the Face of Environmental Uncertainty</a> <a href="https://arxiv.org/abs/2404.18909">[Arxiv]</a>
+<br>L. Shi, E. Mazumdar, Y. Chi, and A. Wierman, <i> International Conference on Machine Learning (ICML)</i>, 2024.  </p> 
+
+<li><p><a href="https://openreview.net/forum?id=cOQH8YO255">The Curious Price of Distributional Robustness in Reinforcement Learning with a Generative Model</a> <a href="https://arxiv.org/abs/2305.16589">[Arxiv]</a>
+<br>L. Shi, G. Li, Y. Wei, Y. Chen, M. Geist, and Y. Chi, <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2023.
+
+<li><p><a href="https://jmlr.org/papers/volume25/22-1482/22-1482.pdf">Distributionally Robust Model-Based Offline Reinforcement Learning with Near-Optimal Sample Complexity</a> <a href="https://arxiv.org/abs/2208.05767">[Arxiv]</a> <a href="https://github.com/Laixishi/Robust-RL-with-KL-divergence">[Code]</a>
+<br>L. Shi and Y. Chi, <i>Journal of Machine Learning Research</i>, vol. 25, no. 200, pp.1-91, 2024.  </p> 
+
+<li><p><a href="https://rlj.cs.umass.edu/2024/papers/Paper189.html">Sample Complexity of Offline Distributionally Robust Linear Markov Decision Processes</a> <a href="https://arxiv.org/abs/2403.12946">[Arxiv]</a>
+<br>H. Wang, L. Shi, and Y. Chi, <i>Reinforcement Learning Journal</i>, vol. 3, pp. 1467-1510, 2024. </p>
+
+</ul> 
+
+
+<h3>Offline and Simulator RL</h3> 
+<ul> 
+
+<li> <p><a href="https://doi.org/10.1214/23-AOS2342">Settling the Sample Complexity of Model-Based Offline Reinforcement Learning</a> <a href="https://arxiv.org/pdf/2204.05275.pdf">[Arxiv]</a> 
+<br>G. Li, L. Shi, Y. Chen, Y. Chi and Y. Wei, <i>The Annals of Statistics</i>, vol. 52, no. 1, pp. 233-260, 2024.  </p> 
+
+<li> <p><a href="https://pubsonline.informs.org/doi/full/10.1287/opre.2023.2450">Is Q-Learning Minimax Optimal? A Tight Sample Complexity Analysis</a> <a href="https://arxiv.org/pdf/2102.06548.pdf">[Arxiv]</a> 
+<br>G. Li, C. Cai, Y. Chen, Y. Wei, and Y. Chi, <i>Operations Research</i>, vol. 72, no. 1, pp. 222-236, 2024. Short version at ICML 2021. </p> 
+
+ <li> <p><a href="https://pubsonline.informs.org/doi/full/10.1287/opre.2023.2451">Breaking the Sample Size Barrier in Model-Based Reinforcement Learning with a Generative Model</a> <a href="https://arxiv.org/pdf/2005.12900.pdf">[Arxiv]</a>  
+<br>G. Li, Y. Wei, Y. Chi, and Y. Chen, <i>Operations Research</i>, vol. 72, no. 1, pp. 203-221, 2024. Short version at NeurIPS 2020. </p> 
+
+<li><p><a href="https://doi.org/10.1109/TIT.2024.3394685">High-probability Sample Complexities for Policy Evaluation with Linear Function Approximation</a> <a href="https://arxiv.org/abs/2305.19001">[Arxiv]</a>
+<br>G. Li*, W. Wu*, Y. Chi, C. Ma, A. Rinaldo, and Y. Wei, <i>IEEE Trans. on Information Theory</i>, vol. 70, no. 8, pp. 5969-5999, 2024.
+
+<li><p><a href="https://openreview.net/forum?id=Nd3FennRJZ">Reward-agnostic Fine-tuning: Provable Statistical Benefits of Hybrid Reinforcement Learning</a> <a href="https://arxiv.org/abs/2305.10282">[Arxiv]</a>
+<br>G. Li*, W. Zhan*, J. D. Lee, Y. Chi, and Y. Chen, <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2023. (*=equal contribution) </p> 
+
+<li><p><a href="https://proceedings.mlr.press/v162/shi22c.html">Pessimistic Q-Learning for Offline Reinforcement Learning: Towards Optimal Sample Complexity</a> <a href="https://arxiv.org/abs/2202.13890">[Arxiv]</a> 
+<br>L. Shi, G. Li, Y. Wei, Y. Chen, and Y. Chi, <i>International Conference on Machine Learning (ICML)</i>, 2022.  
+
+<li> <p><a href="https://openreview.net/forum?id=W8nyVJruVg">Minimax-Optimal Multi-Agent RL in Markov Games With a Generative Model</a> <a href="https://arxiv.org/abs/2208.10458">[Arxiv]</a> 
+<br>G. Li, Y. Chi, Y. Wei, and Y. Chen,  <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2022, <b>oral</b> presentation.  </p> 
+
+<li> <p><a href="https://ieeexplore.ieee.org/document/9570295">Sample Complexity of Asynchronous Q-Learning: Sharper Analysis and Variance Reduction</a> <a href="https://arxiv.org/pdf/2006.03041.pdf">[Arxiv]</a> 
+<br>G. Li, Y. Wei, Y. Chi, Y. Gu, and Y. Chen, <i>IEEE Trans. on Information Theory</i>, vol. 68, no. 1, pp. 448-473, 2022. Short version at NeurIPS 2020.</p> 
+
+
+</ul> 
+
+
+<h3> Policy Optimization</h3> 
+<ul> 
+
+<li><p><a href="https://openreview.net/forum?id=bRwBpKrNzF7">Faster Last-iterate Convergence of Policy Optimization in Zero-Sum Markov Games</a> <a href="https://arxiv.org/abs/2210.01050">[Arxiv]</a>
+<br>S. Cen, Y. Chi, S. Du, and L. Xiao, <i>International Conference on Learning Representations (ICLR)</i>, 2023.  (Authors are listed alphabetically.)
+
+<li><p><a href="https://openreview.net/forum?id=vPXp7K_Yhre">Asynchronous Gradient Play in Zero-Sum Multi-agent Games</a> <a href="https://arxiv.org/abs/2211.08980">[Arxiv]</a>
+<br>R. Ao, S. Cen, and Y. Chi, <i>International Conference on Learning Representations (ICLR)</i>, 2023.  (Authors are listed alphabetically.)
+
+<li><p><a href="https://jmlr.org/papers/volume25/21-1205/21-1205.pdf">Fast Policy Extragradient Methods for Competitive Games with Entropy Regularization</a> <a href="https://arxiv.org/pdf/2105.15186.pdf">[Arxiv]</a> 
+<br>S. Cen, Y. Wei, and Y. Chi, <i>Journal of Machine Learning Research</i>, vol. 25, no. 4, pp. 1-48, 2024. Short version at NeurIPS 2021.</p> 
+ 
+<li><p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9993175">Independent Natural Policy Gradient Methods for Potential Games: Finite-time Global Convergence with Entropy Regularization</a> <a href="https://arxiv.org/pdf/2204.05466.pdf">[Arxiv]</a> <b>[Invited Paper]</b>
+<br>S. Cen, F. Chen, and Y. Chi, <i>IEEE Conference on Decision and Control (CDC)</i>, 2022.</p>
+ 
+<li><p><a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2021.2151">Fast Global Convergence of Natural Policy Gradient Methods with Entropy Regularization</a> <a href="https://arxiv.org/pdf/2007.06558.pdf">[Arxiv]</a> <a href="https://colab.research.google.com/drive/1LQ0hYxIuPintMNnAqcf9ZOyKpJNnxx8B?usp=sharing">[Code]</a>
+<br>S. Cen, C. Cheng, Y. Chen, Y. Wei, and Y. Chi, <i>Operations Research</i>, vol. 70, no. 4, pp. 2563-2578, 2022.
+<br><b>INFORMS George Nicholson Student Paper Competition Finalist</b> </p>
+
+<li><p><a href="https://epubs.siam.org/doi/full/10.1137/21M1456789">Policy Mirror Descent for Regularized Reinforcement Learning: A Generalized Framework with Linear Convergence</a> <a href="https://arxiv.org/pdf/2105.11066.pdf">[Arxiv]</a>
+<br>W. Zhan*, S. Cen*, B. Huang, Y. Chen, J. D. Lee, and Y. Chi, <i>SIAM Journal on Optimization</i>, vol. 33, no. 2, pp. 1061-1091, 2023. Short version at OPT 2021 as an <b>oral</b> presentation. (*=equal contribution) </p>
+
+<li><p><a href="https://doi.org/10.1007/s10107-022-01920-6">Softmax Policy Gradient Methods Can Take Exponential Time to Converge</a> <a href="https://arxiv.org/pdf/2102.11270.pdf">[Arxiv]</a> 
+<br>G. Li, Y. Wei, Y. Chi, and Y. Chen, <i>Mathematical Programming</i>, vol. 201, pp. 707-802, 2023. Short version at COLT 2021.</p> 
+
+
+</ul> 
+ 
+
+ 
+
+<h3> Applications and Empiricism </h3> 
+
+<ul> 
+
+<li><p><a href="https://openreview.net/forum?id=2uQBSa2X4R">Robust Gymnasium: A Unified Modular Benchmark for Robust Reinforcement Learning</a> <a href="https://arxiv.org/abs/2502.19652">[Arxiv]</a> <a href="https://robust-rl.com/">[Website]</a> <a href="https://github.com/SafeRL-Lab/Robust-Gymnasium">[Code]</a>
+<br>S. Gu*, L Shi*, M. Wen, M. Jin, E. Mazumdar, Y. Chi, A. Wierman, C. Spanos, <i>International Conference on Learning Representations (ICLR)</i>, 2025. </p>  
+
+<li><p><a href="https://doi.org/10.1109/GLOBECOM52923.2024.10901010">Scalable Dynamic Resource Allocation via Domain Randomized Reinforcement Learning</a> 
+<br>Y. Wang, L. Shi, M. Lee, J. Sydir, Z. Zhou, Y. Chi, and B. Li, <i>IEEE Global Communications Conference (GLOBECOM)</i>, 2024.
+
+<li><p><a href="https://openreview.net/forum?id=bTL5SNOpfa">Seeing is not Believing: Robust Reinforcement Learning against Spurious Correlation</a> <a href="https://arxiv.org/abs/2307.07907">[Arxiv]</a> <a href="https://sites.google.com/view/causaldro">[Website]</a>
+<br>W. Ding*, L. Shi*, Y. Chi, and D. Zhao, <i>Conference on Neural Information Processing Systems (NeurIPS)</i>, 2023. (*=equal contribution) </p> 
+
+<li><p><a href="https://link.springer.com/chapter/10.1007/978-3-031-43421-1_27">Offline Reinforcement Learning with On-Policy Q-Function Regularization</a> <a href="https://arxiv.org/abs/2307.13824">[Arxiv]</a>
+<br>L. Shi, R. Dadashi, Y. Chi, P. S. Castro, and M. Geist, <i>European Conference on Machine Learning (ECML)</i>, 2023.
+
+<li><p><a href="https://openreview.net/pdf?id=yE1_GpmDOPL">A Trajectory is Worth Three Sentences: Multimodal Transformer for Offline Reinforcement Learning</a> 
+<br>Y. Wang, M. Xu, L. Shi, and Y. Chi, <i>Conference on Uncertainty in Artificial Intelligence (UAI)</i>, 2023.</p> 
+
+</ul>  
+
+<p><br /><br /></p>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

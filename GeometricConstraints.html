@@ -1,0 +1,135 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+<script type="text/javascript">LatexIT.add('li',true);</script>
+<title>Yuejie Chi</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category"><img class="menu" src="yale_logo.png" width="100px" align="center"></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yuejie Chi</h1>
+</div>
+
+
+<h2>Signal Processing under Geometric Constraints</h2>
+<p></p>
+<p><img src="photos/mismatch_streaming.png" width="500" style="float:right; margin:10px 20px 20px 10px;" /></p>
+<p> One major challenge in the data deluge is identifying patterns of activity from the flow of information in a network, examples including sensor networks, social networks and biological networks, by the prospect of systematically learning and predicting the network behavior. Network inference is hard because of its massive scale and time dynamics of the flow of information. How can we reduce network dimensionality without compromising the potential for learning and control within limited processing capabilities? 
+
+<p>What saves the day is the geometry of information flow, the fact that it can be viewed as a low-dimensional manifold in a very high dimensional space. Leveraging low-dimensional data representations through geometric constraints such as low rank, sparsity, and graphs, we hope to reduce the sampling cost of information acquisition and improve the performance of decision making. However there is still the problem of tapping into that manifold. When the manifold is linear, we developed online algorithms with low-complexity that can estimate and track the evolution of a low-rank subspace from partial observations even with Poisson noise, and demonstrated superior performance on various applications. What is truly exciting is the recognition that the geometry of information flow, expressed in terms of the top principal components of the data covariance matrix, is preserved even from highly incomplete observations. </p>
+
+<p> In order to further overcome the barrier between the high data generation rate and limited processing capabilities facing many modern data-intensive applications, we realized that by leveraging structural assumptions of covariance structures, a single sketch per sample suffices for accurately reconstructing the covariance matrix rather than the original data set. This offers a radical breakthrough for learning covariance structures requiring substantially fewer storage of the data than conventional methods. The key approach is to develop efficient sketching strategies of streaming data tailored to specific inference tasks with a recognition of the embedded low-dimensional structures. This idea can be extended to sketch and analyze graph-structured data, as well as detect anomalies and change-points. Our new framework has the potential to advance the paradigm of high-dimensional data analysis from simple post-processing toward an integration of data priors, agile acquisition, and adaptive processing.</p>
+
+ 
+ 
+<h3> Overview </h3>
+<ul>
+<li> <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8417980">Streaming PCA and Subspace Tracking: The Missing Data Case</a> <a href="https://arxiv.org/pdf/1806.04609.pdf">[Arxiv]</a> <a href="https://gitlab.eecs.umich.edu/girasole/ProcIEEEstreamingPCA/">[Code]</a>
+<br> L. Balzano, Y. Chi and Y. M. Lu, <i>Proceedings of the IEEE</i>, vol. 106, no. 8, pp. 1293-1310, 2018.</p>
+<li> <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8399563">Harnessing Structures in Big Data via Guaranteed Low-Rank Matrix Estimation</a> <a href="https://arxiv.org/pdf/1802.08397.pdf">[Arxiv]</a>
+<br> Y. Chen and Y. Chi, <i>IEEE Signal Processing Magazine</i>, vol. 35, no. 4, pp. 14-31, 2018. </p>
+</ul>
+
+
+
+<h3> Covariance Sketching and Low-Rank Covariance Estimation </h3>
+
+<ul>
+<li> <p><a href="http://dx.doi.org/10.1214/20-AOS1986">Subspace Estimation from Unbalanced and Incomplete Data Matrices: $\ell_{2,\infty}$ Statistical Guarantees</a> <a href="https://arxiv.org/abs/1910.04267">[Arxiv]</a>
+<br> C. Cai, G. Li, Y. Chi, H. V. Poor, and Y. Chen, <i>The Annals of Statistics</i>, vol. 49, no. 2, pp. 944-967, 2021.</p>
+
+<li> <p><a href="https://ieeexplore.ieee.org/document/9317779">Nonconvex Matrix Factorization from Rank-One Measurements</a> <a href="https://arxiv.org/pdf/1802.06286.pdf">[Arxiv]</a>  
+<br> Y. Li, C. Ma, Y. Chen, and Y. Chi, <i>IEEE Trans. on Information Theory</i>, vol. 67, no. 3, pp. 1928-1950, 2021. Short version at AISTATS 2019. </p>
+
+<li> <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8675477">Low-Rank Structured Covariance Matrix Estimation</a> 
+<br> A. P. Shikhaliev, L. C. Potter and Y. Chi, <i>IEEE Signal Processing Letters</i>, vol. 26, no. 5, pp. 700-704, 2019.</p>
+
+<li> <p><a href="http://dx.doi.org/10.1109/TSP.2016.2620109">Low-Rank Positive Semidefinite Matrix Recovery from Corrupted Rank-One Measurements</a>
+<br> Y. Li, Y. Sun and Y. Chi, <i>IEEE Trans. on Signal Processing</i>, vol. 65, no. 2, pp. 397-408, 2017.</p>
+
+<li> <p><a href="http://dx.doi.org/10.1109/TSP.2017.2712127">Subspace Learning From Bits</a> <a href="http://arxiv.org/abs/1407.6288">[Arxiv]</a>
+<br> Y. Chi and H. Fu, <i>IEEE Trans. on Signal Processing</i>, vol. 65, no. 17, pp. 4429-4442, 2017. Short versions at GlobalSIP 2014 and Asilomar 2016.</p>
+
+<li> <p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7101247">Exact and Stable Covariance Estimation from Quadratic Sampling via Convex Programming </a> <a href="http://arxiv.org/abs/1310.0807">[Arxiv]</a>
+<br>Y. Chen, Y. Chi and A. J. Goldsmith. <i>IEEE Trans. on Information Theory</i>, vol. 61, pp. 4034 - 4059, 2015.</p>
+
+ 
+</ul>
+
+<h3> Subspace Tracking and Statistical Inference for Streaming Data</h3>
+
+<ul>
+
+<li> <p><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6605610">PETRELS:  Parallel Subspace Estimation and Tracking using Recursive Least Squares from Partial Observations</a> <a href="code/petrels_codes.zip">[Code]</a>
+<br>Y. Chi, Y. C. Eldar, and R. Calderbank. <i>IEEE Trans. on Signal Processing</i>, vol. 61, pp. 5947 - 5959, 2013.
+<br>Short version received <b>Best Student Paper Award</b> at ICASSP 2012.</p>
+
+<li> <p><a href="http://ieeexplore.ieee.org/document/8141954/">Stochastic Approximation and Memory-Limited Subspace Tracking for Poisson Streaming Data</a>
+<br> L. Wang and Y. Chi, <i>IEEE Trans. on Signal Processing</i>, vol. 66, no. 4, pp. 1051-1064, 2018.</p>
+
+<li><p><a href="https://ieeexplore.ieee.org/abstract/document/8683025">Shift-Invariant Subspace Tracking with Missing Data</a> <b>[Invited Paper]</b>
+<br>M. Cho and Y. Chi, <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 2019.</p>
+
+
+</ul>
+
+<h3> Leveraging Graph Structures for Better Inference </h3>
+
+<ul>
+
+
+<li> <p><a href="https://doi.org/10.1109/ICASSP43922.2022.9746007">Privacy-Preserving Federated Multi-task Linear Regression: A One-Shot Linear Mixing Approach Inspired by Graph Regularization</a> 
+<br>H. Lee, A. Bertozzi, J. Kovacevic, and Y. Chi, <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 2022.
+
+<li><p><a href="https://ieeexplore.ieee.org/document/9136786">Learning Latent Features with Pairwise Penalties in Low-Rank Matrix Completion</a> <a href="http://arxiv.org/abs/1802.05821">[Arxiv]</a>
+<br>K. Ji, J. Tan, J. Xu, and Y. Chi, <i>IEEE Trans. on Signal Processing</i>, vol. 68, pp. 4210-4225, 2020. Short version at SAM 2020.</p>
+
+<li><p><a href="https://ieeexplore.ieee.org/document/8926407">Vector-Valued Graph Trend Filtering with Non-Convex Penalties</a> <a href="https://arxiv.org/pdf/1905.12692.pdf">[Arxiv]</a>
+ <a href="https://github.com/HarlinLee/nonconvex-GTF-public">[Code]</a>
+<br>R. Varma*, H. Lee*, J. Kovacevic and Y. Chi, <i>IEEE Trans. on Signal Processing over Networks</i>, vol. 6, no. 1, pp. 48-62, 2020. Short version at ICASSP 2019. (*=equal contribution)</p>  
+</ul>
+
+<h3> Sparsity for Signal Processing and Machine Learning </h3>
+
+<ul>
+
+<li> <p><a href="https://doi.org/10.1109/CAMSAP.2015.7383729">Blind Calibration of Multi-Channel Samplers using Sparse Recovery</a> <b>[Invited Paper]</b>
+<br>Y. Li, Y. He, Y. Chi and Y. M. Lu. <i> IEEE International Workshop on Computational Advances in Multi-Sensor Adaptive Processing (CAMSAP)</i>, 2015.
+<li> <p><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6678501">Classification and Boosting with Multiple Collaborative Representations</a>
+<br>Y. Chi and F. Porikli. <i>IEEE Trans. on Pattern Analysis and Machine Intelligence</i>, vol. 36, pp. 1519 - 1531, 2014.</p>
+</ul>
+
+
+ 
+
+ 
+ 
+
+<p><br /><br /></p>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Yuejie Chi</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category"><img class="menu" src="yale_logo.png" width="100px" align="center"></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html" class="current">Research</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yuejie Chi</h1>
+</div>
+
+
+<h2>Inverse Problems and Super-Resolution Imaging</h2>
+<p></p>
+<p><img src="photos/hankel.jpg" width="300" style="float:right; margin:0px 10px -5px -10px;" /></p>
+<p>The goal of image inversion is to invert the source locations of the wavefields that produced the image acquired at the sensor suite, where the image broadly takes the form of a time series, a space series, a space-time series, a 2-D image, and so on. Typically, one is interested in super-resolution, such that the desired resolution for source locations exceeds the temporal or spatial resolution of the image itself. Conventional methods assume a separable linear model, wherein a sparse parametric modal representation for the source signal is posited and estimates of linear parameters (complex amplitudes of modes) and nonlinear mode parameters (frequency, wavenumber, delay, and/or Doppler) are extracted. 
+
+<p> Compressive Sensing (CS) suggests that if a signal can be represented in some basis with a few nonzero coefficients (i.e. admits a sparse representation), then it can be reconstructed from a much smaller number of samples than the ambient dimension. This opens up exciting possibilities in signal processing to consider sparsity as a new prior in algorithm design to increase resolution and reduce complexity. However, the success of CS relies on the assumption that the signal is sparse in an a priori known basis, yet, in spectrum analysis or parameter estimation problems in radar and sonar, there is an inevitable mismatch between the basis assumed in CS and the true basis imposed by the physics of scattering. The performance of CS degenerates considerably in the presence of this basis mismatch, no matter how fine the grid is in the assumed basis.
+
+<p>To address this problem, we develop novel optimization-based algorithms for super-resolution imaging, based on structured matrix completion and atomic norm minimization. The versatility of the optimization framework allows tackling imaging modalities that are out of reach of traditional methods, particularly when the measurements are susceptible to missing data, outliers, calibration errors, poor models of the physical field, and interference from multiple sources. The proposed algorithms leverage physically-meaningful constraints of the propagation field as well as sparsity constraints of the source scene, admit provably accurate estimates under appropriate mathematical models, and provide important insights on the fundamental limits. Built on the theory, our group further designed tailored super-resolution algorithms for single-molecule fluorescence microscopy imaging, which produce high-resolution image reconstructions at a reduced computational time by an order-of-magnitude than the state-of-the-art. </p>
+
+ 
+
+
+<h3> Overview </h3>
+<ul>
+<li> <p><a href="https://doi.org/10.1109/MSP.2019.2962209">Harnessing Sparsity over the Continuum: 
+Atomic Norm Minimization for Super Resolution</a> <a href="https://arxiv.org/pdf/1904.04283.pdf">[Arxiv]</a>
+<br>Y. Chi and M. Ferreira Da Costa, <i>IEEE Signal Processing Magazine</i>, vol. 37, no. 2, pp. 39-57, 2020.</p>
+<li> <p><a href="talks/icassp2016_tutorial.pdf">Convex Optimization Techniques for Super-resolution Parameter Estimation</a>
+<br>Y. Chi and G. Tang, <i>ICASSP tutorial</i>, 2016. </p>
+<li> <p><a href="talks/SSP2014_tutorial.pdf">Compressive Parameter Estimation: The Good, The Bad, and The Ugly</a>
+<br>Y. Chi and A. Pezeshki, <i>SSP tutorial</i>, 2014. </p>
+</ul>
+
+<h3> Super-Resolution Off the Grid</h3>
+<ul>
+
+<li><p><a href="https://doi.org/10.1109/JSAIT.2023.3262689">Local Geometry of Nonconvex Spike Deconvolution from Low-Pass Measurements</a> <a href="https://arxiv.org/abs/2208.10073">[Arxiv]</a>
+<br>M. Ferreira Da Costa and Y. Chi, <i>IEEE Journal on Selected Areas in Information Theory</i>, vol. 4, pp. 1-15, 2023.</p> 
+
+<li><p><a href="https://ieeexplore.ieee.org/document/9296231">Compressed Super-Resolution of Positive Sources</a> <a href="https://arxiv.org/pdf/2010.10461">[Arxiv]</a>
+<br>M. Ferreira Da Costa and Y. Chi, <i>IEEE Signal Processing Letters</i>, vol. 28, pp. 56-60, 2021.</p>
+
+<li> <p><a href="https://ieeexplore.ieee.org/document/9090204">On the Stable Resolution Limit of Total Variation Regularization for Spike Deconvolution</a> <a href=" https://arxiv.org/pdf/1910.01629.pdf">[Arxiv]</a>
+<br>M. Ferreira Da Costa and Y. Chi, <i>IEEE Trans. on Information Theory</i>, vol. 66, no. 11, pp. 7237-7252, 2020. Short version at CISS 2020.</p> 
+
+<li> <p><a href="http://www.sciencedirect.com/science/article/pii/S1063520317300234">Stable Separation and Super-Resolution of Mixture Models</a> <a href="http://arxiv.org/abs/1506.07347">[Arxiv]</a>
+<br> Y. Li and Y. Chi, <i>Applied and Computational Harmonic Analysis</i>, vol. 46, no. 1, pp. 1-39, 2019. Short versions at ISIT 2015 and SampTA 2015.</p>
+
+<li> <p><a href="https://ieeexplore.ieee.org/document/8340173/">Quantized Spectral Compressed Sensing: Cramer-Rao Bounds and Recovery Algorithms</a> <a href="https://arxiv.org/abs/1710.03654">[Arxiv]</a>
+<br> H. Fu and Y. Chi, <i>IEEE Trans. on Signal Processing</i>, vol. 66, no. 12, pp. 3268-3279, 2018.</p>
+
+<li> <p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7313018">Off-the-Grid Line Spectrum Denoising and Estimation with Multiple Measurement Vectors</a> <a href="http://arxiv.org/abs/1408.2242">[Arxiv]</a> <a href="code/atomic_mmv.zip">[Code]</a>
+<br> Y. Li and Y. Chi, <i>IEEE Trans. on Signal Processing</i>, vol. 64, pp. 1257 - 1269, 2016.</p> 
+
+<li> <p><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6998075">Compressive Two-Dimensional Harmonic Retrieval via Atomic Norm Minimization</a> <a href="code/superres_2datomic.m">[Code]</a>
+<br>Y. Chi and Y. Chen. <i>IEEE Trans. on Signal Processing</i>, vol. 63, pp. 1030 - 1042, 2015.</p>
+
+<li> <p><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=6867345">Robust Spectral Compressed Sensing via Structured Matrix Completion</a> <a href="http://arxiv.org/abs/1304.8126">[Arxiv]</a> <a href="code/EMaC_codes.zip">[Code]</a>
+<br>Y. Chen and Y. Chi. <i>IEEE Trans. on Information Theory</i>, vol. 60, pp. 6576-6601, 2014.</p>
+</ul>
+
+<h3> Bilinear Inverse Problems and Blind Super-Resolution </h3>
+<ul>
+<li> <p><a href="https://ieeexplore.ieee.org/document/9410615">Manifold Gradient Descent Solves Multi-channel Sparse Blind Deconvolution Provably and Efficiently</a> <a href="https://arxiv.org/pdf/1911.11167.pdf">[Arxiv]</a> 
+<br> L. Shi and Y. Chi, <i>IEEE Trans. on Information Theory</i>, vol. 67, no. 7, pp. 1-28, 2021. Short version at ICASSP 2020. </p> 
+<li> <p><a href="http://doi.org/10.1007/s10208-019-09429-9">Implicit Regularization in Nonconvex Statistical Estimation: Gradient Descent Converges Linearly for Phase Retrieval, Matrix Completion and Blind Deconvolution</a> <a href="https://arxiv.org/pdf/1711.10467.pdf">[Arxiv]</a>
+<br> C. Ma, K. Wang, Y. Chi, and Y. Chen, <i>Foundations of Computational Mathematics</i>, vol. 20, pp. 451-632, 2020. Short version at ICML 2018.
+<br><b>2024 SIAM Activity Group on Imaging Science Best Paper Prize</b></p>
+
+<li> <p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7536657">Blind Deconvolution from Multiple Sparse Inputs</a>  
+<br> L. Wang and Y. Chi, <i>IEEE Signal Processing Letters</i>, vol. 23, no. 10, pp. 1384-1388, 2016.</p>
+<li> <p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7435246">Guaranteed Blind Sparse Spikes Deconvolution via Lifting and Convex Optimization</a> <a href="http://arxiv.org/abs/1506.02751">[Arxiv]</a> <a href="code/atomiclift.m">[Code]</a>
+<br> Y. Chi, <i>IEEE Journal of Selected Topics in Signal Processing - Special Issue on Structured Matrices in Signal and Data Processing</i>, vol. 10, no. 4, pp. 782 - 794, 2016.</p>
+</ul>
+
+<h3> Compressed Sensing and Basis Mismatch </h3>
+<ul>
+<li> <p><a href="http://link.springer.com/chapter/10.1007/978-3-319-16042-9_3">Compressed Sensing, Sparse Inversion, and Model Mismatch</a>
+<br>A. Pezeshki, Y. Chi, L. L. Scharf, and E. K. Chong. <i>Compressed Sensing and Its Applications</i>, Birkhauser, 2015. </p>
+<li> <p><a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5710590">Sensitivity of Basis Mismatch to Compressed Sensing</a>  
+<br>Y. Chi, L. L. Scharf, A. Pezeshki and R. Calderbank. <i>IEEE Trans. on Signal Processing</i>, vol. 59, pp. 2182 - 2195, 2011.
+<br><b>2013 IEEE Signal Processing Society Young Author Best Paper Award</b></p>
+<li> <p><a href="https://ieeexplore.ieee.org/document/6638944">Analysis of Fisher Information and the Cramer-Rao Bound for Nonlinear Parameter Estimation after Compressed Sensing</a>
+<br>P. Pakrooh, L. L. Scharf, A. Pezeshki, and Y. Chi. <i>International Conference on Acoustics, Speech, and Signal Processing (ICASSP)</i>, 2013.</p>
+</ul>
+
+ 
+
+<h3> Single-Molecule Localization Microscopy Imaging </h3>
+<ul>
+<li> <p><a href="http://dx.doi.org/10.1109/TCI.2017.2699425">Super-Resolution Image Reconstruction for High-Density 3D Single-Molecule Microscopy</a> <a href="code/SMLM_Reconstruction.zip">[Code]</a>
+<br> J. Huang, M. Sun, J. Ma and Y. Chi, <i>IEEE Trans. on Computational Imaging</i>, vol. 3, no. 4, pp. 763-773, 2017.</p>
+<li> <p><a href="http://www.opticsinfobase.org/boe/abstract.cfm?uri=boe-6-3-902">3D Multifocus Astigmatism and Compressed Sensing (3D MACS) Based Superresolution Reconstruction</a> <a href="code/SMLM_Reconstruction.zip">[Code]</a>
+<br>J. Huang, M. Sun, K. Gumpper, Y. Chi and J. Ma. <i>Biomedical Optics Express</i>, vol. 6, pp. 902 - 917, 2015.</p>
+<li>  <p><a href="https://www.osapublishing.org/ol/abstract.cfm?URI=ol-40-13-2989">Fast Two-dimensional Super-resolution Image Reconstruction Algorithm for Ultra-high Emitter Density</a> <a href="code/SMLM_Reconstruction.zip">[Code]</a>
+<br> J. Huang, K. Gumpper, Y. Chi, M. Sun and J. Ma, <i>Optics Letters</i>, vol. 40, pp. 2989 - 2992, 2015.</p>
+</ul>
+
+<h3> Source Localization in Sensing Systems </h3>
+<ul> 
+ <li><p><a href="https://doi.org/10.1109/PAST49659.2022.9975097">Zoom Out: Abstractions for Efficient Radar Algorithms on COTS Architectures</a>
+<br>T. Low, Y. Chi, J. Hoe, S. Kumar, A. Prabhakara, L. Shi, U. Sridhar, N. Tukanov, C. Wang, and Y. Wu, <i>IEEE International Symposium on Phased Array Systems and Technology (PAST)</i>, 2022. </p>
+
+<li> <p><a href="https://dl.acm.org/citation.cfm?id=3360887">Device-free Multiple People Localization through Floor Vibration</a>
+<br>L. Shi, M. Mirshekari, J. Fagert, Y. Chi, H. Y. Noh, P. Zhang, and S. Pan, <i>First ACM Workshop on Device-Free Human Sensing</i>, 2019.</p>
+</ul>
+
+<p><br /><br /></p>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
