@@ -1,0 +1,162 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<link rel="stylesheet" href="jemdoc.css" type="text/css">
+<title>Yuejie Chi</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tbody><tr valign="top">
+<td id="layout-menu">
+<div class="menu-category"><img class="menu" src="yale_logo.png" width="100px" align="center"></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html" class="current">Teaching</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yuejie Chi</h1>
+</div>
+
+<h2>ECE 18-813B: Special Topics in Artificial Intelligence: Foundations of Reinforcement Learning</h2>
+
+<p><img src="photos/maze.png" width="250" style="float:right; margin:0px 10px 5px 10px;" /></p>
+Reinforcement learning (RL), which is modeled as sequential decision making in the face of uncertainty, has garnered growing interest in recent years due to its remarkable success in practice. However, the explosion of complexity in emerging applications and the presence of nonconvexity exacerbate the challenge of achieving efficient RL in resource-constrained situations, where data collection and computation is expensive, time-consuming, or even high-stakes (e.g., in clinical trials, autonomous systems, and online advertising). Despite decades-long research efforts, however, the theoretical underpinnings of RL remain far from mature, especially when it comes to understanding and enhancing the sample and computational efficiencies of RL algorithms. An explosion of research has been conducted over the past few years towards advancing the frontiers of these topics, which leverage toolkits that sit at the intersection of multiple fields, including but not limited to control, optimization, statistics and learning. </p>
+<p>This course aims to present a coherent framework that covers important algorithmic developments in modern RL, highlighting the connections between new ideas and classical topics. Employing Markov Decision Processes (MDPs) as the central mathematical framework, we will cover multiple important scenarios including but not limited to the simulator setting, online RL, offline RL, and multi-agent RL, gravitating our discussions around issues such as sample complexity, computational efficiency, function approximation, distributional robustness, as well as information-theoretic and algorithmic-dependent lower bounds.  
+ 
+<br>
+
+<h3><a href="ece18813B_notes/18813B_syllabus_Sp2023.pdf">Course Syllabus</a></h3>
+ 
+<h3>Recommended Readings</h3>
+<ul>
+<li> <p><a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">Reinforcement Learning: Theory and Algorithms</a>, by Agarwal, Jiang, Kakade, and Sun</p>
+<li> <p><a href="http://incompleteideas.net/book/the-book.html">Reinforcement learning: An introduction</a>, by Sutton and Barto</p>
+<li> <p><a href="https://tor-lattimore.com/downloads/book/book.pdf">Bandit Algorithms</a>, by Lattimore and Szepesvari</p>
+<li><p><a href="https://www.davidsilver.uk/teaching/">Reinforcement Learning</a>, by Silver</p>
+<li> <p><a href="https://sites.ualberta.ca/~szepesva/papers/RLAlgsInMDPs.pdf">Algorithms for Reinforcement Learning</a>, by Szepesvari</p>
+
+</ul> 
+
+
+<h3>Lecture Notes</h3>
+
+<p>Note: some figures in the slides are taken from the internet or public resources, without proper acknowledgement. I apologize for these omissions in advance, which will be fixed at a later time. </p>
+<ul>
+<li> <p><a href="ece18813B_notes/lecture1-intro.pdf">Lecture 1: Introduction</a><br>
+<i>Readings:</i> [<a href="http://incompleteideas.net/book/the-book.html">Sutton and Barto, Chapter 1</a>] </p>
+
+<li> <p><a href="ece18813B_notes/lecture2-stochastic-bandits.pdf">Lecture 2: Multi-arm bandits: stochastic bandits</a><br>
+<i>Readings:</i> [<a href="https://tor-lattimore.com/downloads/book/book.pdf">Lattimore and Szepesvari, Chapters 4 and 7</a>] </p>
+
+<li> <p><a href="ece18813B_notes/lecture3-adversarial-bandits.pdf">Lecture 3: Multi-arm bandits: adversarial bandits</a><br>
+<i>Readings:</i> [<a href="https://tor-lattimore.com/downloads/book/book.pdf">Lattimore and Szepesvari, Chapter 11</a>] </p>
+
+<li> <p><a href="ece18813B_notes/lecture4-lower-bounds-bandits.pdf">Lecture 4: Multi-arm bandits: lower bounds</a><br>
+<i>Readings:</i> [<a href="https://tor-lattimore.com/downloads/book/book.pdf">Lattimore and Szepesvari, Chapters 13-16</a>] </p>
+
+<li> <p><a href="ece18813B_notes/lecture5-MDP-basics.pdf">Lecture 5: Markov decision processes: basics</a><br>
+<i>Readings:</i> [<a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">AJKS, Chapter 1</a>] [<a href="https://www.davidsilver.uk/teaching/">Silver's Lectures 1 and 2</a>]</p>
+
+<li> <p><a href="ece18813B_notes/lecture6-MDP-DP.pdf">Lecture 6: Markov decision processes: dynamic programming</a><br>
+<i>Readings:</i> [<a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">AJKS, Chapter 1</a>] [<a href="https://www.davidsilver.uk/teaching/">Silver's Lecture 3</a>]</p>
+
+<li> <p><a href="ece18813B_notes/lecture7-model-based-RL-simulator.pdf">Lecture 7: Model-based RL with simulators</a><br>
+<i>Readings:</i> [<a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">AJKS, Chapter 2</a>] [<a href="https://arxiv.org/pdf/2005.12900.pdf">Li et al, 2020</a>]</p>
+
+<li> <p><a href="ece18813B_notes/lecture8-model-free-MC-TD.pdf">Lecture 8: Model-free RL: Monte Carlo and TD learning</a><br>
+<i>Readings:</i> [<a href="https://www.davidsilver.uk/teaching/">Silver's Lecture 4</a>]</p>
+
+<li> <p><a href="ece18813B_notes/lecture9-model-free-Q-learning.pdf">Lecture 9: Model-free RL: Q-learning</a><br>
+<i>Readings:</i> [<a href="https://users.ece.cmu.edu/~yuejiec/papers/SyncQlearning.pdf">Sample complexity of Q-learning</a>]</p>
+
+<li> <p><a href="ece18813B_notes/lecture10-online-RL-GLIE.pdf">Lecture 10: Online RL: Monte Carlo, Sarsa and Q-learning with GLIE</a><br>
+<i>Readings:</i> [<a href="http://incompleteideas.net/book/the-book.html">Sutton and Barto, Chapter 6</a>] [<a href="https://www.davidsilver.uk/teaching/">Silver's Lecture 5</a>] </p>
+
+<li> <p><a href="ece18813B_notes/lecture11-online-RL-regret.pdf">Lecture 11: Online RL: regret analysis and algorithms</a><br>
+<i>Readings:</i> [<a href="https://arxiv.org/pdf/2010.03531.pdf">Lower bound</a>] [<a href="https://arxiv.org/pdf/1703.05449.pdf">UCB-VI</a>] [<a href="https://arxiv.org/pdf/1807.03765.pdf">UCB-Q</a>] </p>
+
+<li> <p><a href="ece18813B_notes/lecture12-policy-optimization.pdf">Lecture 12: Policy optimization: REINFORCE, PG and NPG</a><br>
+<i>Readings:</i> [<a href="https://jmlr.csail.mit.edu/papers/volume22/19-736/19-736.pdf">Policy gradient methods</a>] [<a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">AJKS, Chapters 11-12</a>] 
+
+<li> <p><a href="ece18813B_notes/lecture13-policy-optimization-regularization.pdf">Lecture 13: Policy optimization: the role of regularization</a><br>
+<i>Readings:</i> [<a href="https://arxiv.org/pdf/2007.06558.pdf">Entropy-regularized NPG</a>]  [<a href="http://128.84.21.203/pdf/2102.00135">PMD</a>] [<a href="https://arxiv.org/pdf/2105.11066.pdf">GPMD</a>] 
+
+<li> <p><a href="ece18813B_notes/lecture14-imitation-learning.pdf">Lecture 14: Imitation learning</a><br>
+<i>Readings:</i> [<a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">AJKS, Chapters 15</a>] [<a href="http://proceedings.mlr.press/v9/ross10a/ross10a.pdf">Ross and Bagnell, 2010</a>] [<a href="https://www.cs.cmu.edu/~sross1/publications/Ross-AIStats11-NoRegret.pdf">Ross and Bagnell, 2011</a>]  
+
+<li> <p><a href="ece18813B_notes/lecture15-offline-RL-pessimism.pdf">Lecture 15: Offline RL: pessimism</a><br>
+<i>Readings:</i> [<a href="https://arxiv.org/pdf/2103.12021.pdf">Rashidinejad et al, 2021</a>] [<a href="https://arxiv.org/pdf/2202.13890.pdf">Shi et al, 2022</a>] [<a href="https://arxiv.org/pdf/2204.05275.pdf">Li et al, 2022</a>]
+
+
+<li> <p><a href="ece18813B_notes/lecture16-linear-function-approximation.pdf">Lecture 16: Linear function approximation</a><br>
+<i>Readings:</i> [<a href="http://incompleteideas.net/book/the-book.html">Sutton and Barto, Chapter 9</a>] [<a href="https://www.mit.edu/~jnt/Papers/J063-97-bvr-td.pdf">Tsitsiklis and Van Roy, 1997</a>] [<a href="https://arxiv.org/pdf/1806.02450.pdf">Bhandari et al, 2018</a>]  
+
+<li> <p><a href="ece18813B_notes/lecture17-deadly-triad-actor-critic.pdf">Lecture 17: The deadly triad and actor-critic</a><br>
+<i>Readings:</i>  [<a href="http://incompleteideas.net/book/the-book.html">Sutton and Barto, Chapter 11</a>] [<a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">AJKS, Chapter 13</a>] [<a href="https://www.davidsilver.uk/teaching/">Silver's Lecture 13</a>] </p>
+
+
+
+<li> <p><a href="ece18813B_notes/lecture18-linear-MDP.pdf">Lecture 18: linear MDP</a><br>
+<i>Readings:</i> [<a href="https://rltheorybook.github.io/rltheorybook_AJKS.pdf">AJKS, Chapter 8</a>] [<a href="https://proceedings.neurips.cc/paper/2021/file/8b5700012be65c9da25f49408d959ca0-Paper.pdf">Planning under local access</a>]
+
+<li> <p><a href="ece18813B_notes/lecture19-MARL-sample-complexity.pdf">Lecture 19: MARL: statistical perspective</a><br>
+<i>Readings:</i> [<a href="https://arxiv.org/pdf/2110.14555">V-learning</a>] [<a href="https://arxiv.org/pdf/2208.10458">Minimax-optimal</a>]
+
+<li> <p><a href="ece18813B_notes/lecture20-MARL-policy-optimization.pdf">Lecture 20: MARL: optimization perspective</a><br>
+<i>Readings:</i> [<a href="https://arxiv.org/pdf/2105.15186">Matrix game</a>] [<a href="https://arxiv.org/pdf/2210.01050">Markov game</a>]
+
+
+
+</ul> 
+
+
+
+<h3>Suggested Readings for Presentations/Projects (incomplete)</h3>
+
+<p>You can also select another paper upon the instructor's approval. </p>
+
+<ol>
+
+<li><p>Constrained MDP: <a href="https://proceedings.mlr.press/v139/xu21a.html">CRPO</a>, <a href="https://openreview.net/forum?id=ZJ7Lrtd12x_">sample complexity</a>, <a href="https://proceedings.mlr.press/v139/yu21b.html">multi-objective RL</a></p>
+
+<li> <p>Robust MDP: <a href="https://users.ece.cmu.edu/~yuejiec/papers/DRO_OfflineRL.pdf">sample complexity</a>, <a href="https://arxiv.org/abs/2209.10579">policy optimization</a>, <a href="https://arxiv.org/abs/1911.08689">corruption-robust RL</a></p>
+
+<li><p>Risk-sensitive RL: <a href="https://proceedings.neurips.cc/paper/2021/file/ab6439fa2daf0246f92eea433bca5ac4-Paper.pdf">regret</a></p>
+
+<li><p>Convex MDP: <a href="https://proceedings.neurips.cc/paper/2021/file/d7e4cdde82a894b8f633e6d61a01ef15-Paper.pdf">reward is enough</a></p>
+
+<li><p>Multi-agent RL: <a href="https://arxiv.org/abs/2110.14555">V-learning</a>, <a href="https://arxiv.org/abs/2204.03991">CCE learning</a></p>
+
+<li><p>Representation learning: <a href="https://arxiv.org/abs/2301.08215">decision-estimation coefficient</a>, <a href="https://arxiv.org/abs/2207.07150">contrastive representation learning</a>, <a href="https://arxiv.org/abs/2110.04652">low-rank MDP</a> </p>
+
+<li><p>policy gradient methods: <a href="https://jmlr.csail.mit.edu/papers/volume22/19-736/19-736.pdf">general theory</a>, <a href="https://proceedings.mlr.press/v80/fazel18a.html">PG for control</a>, <a href="https://proceedings.neurips.cc/paper/2020/file/56577889b3c1cd083b6d7b32d32f99d5-Paper.pdf">variance-reduced PG</a></p>
+
+<li><p>Offline RL: <a href="http://proceedings.mlr.press/v48/jiang16.pdf">doubly-robust OPE</a>, <a href="https://arxiv.org/abs/2103.12021">pessimism<a>, <a href="https://proceedings.mlr.press/v178/zhan22a.html">offline RL with realizability</a>, <a href="https://arxiv.org/abs/2108.08812">actor-critic</a>, <a href="https://arxiv.org/pdf/2302.11048.pdf">adversarial model</a></p> 
+
+<li><p>Additional topics: <a href="https://arxiv.org/abs/2301.11270">RLHF</a>, <a href="https://arxiv.org/abs/2210.04157">the role of coverage</a>, <a href="https://arxiv.org/abs/2204.08967">POMDP</a></p>
+
+</ol>
+
+
+ 
+
+<p><br /><br /></p>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

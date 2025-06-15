@@ -1,0 +1,138 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<link rel="stylesheet" href="jemdoc.css" type="text/css">
+<title>Yuejie Chi</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tbody><tr valign="top">
+<td id="layout-menu">
+<div class="menu-category"><img class="menu" src="yale_logo.png" width="100px" align="center"></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html" class="current">Teaching</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yuejie Chi</h1>
+</div>
+
+<h2>ECE 18-898G: Special Topics in Signal Processing: Sparsity, Structure, and Inference</h2>
+
+The objective of this special topic course is to introduce students to algorithmic and theoretical
+aspects of sparsity, and more generally, low-dimensional structures, in large-scale data science
+and machine learning applications. Students will develop expertise at the intersection of
+optimization, signal processing, statistics and computer science to address emerging challenges of
+data science. There will be a final project based on the discussed topics.
+The course will introduce a mathematical theory for sparse representation, and will cover several
+fundamental inverse problems that are built upon low-dimensional modeling, including
+compressed sensing, matrix completion, robust principal component analysis, dictionary learning,
+super resolution, phase retrieval, neural networks, etc. We will focus on designing optimization-based algorithms that are effective in both theory and practice.
+
+<br>
+<h3><a href="ece18898G_notes/18898G_S18_Syllabus_final.pdf">Course Syllabus</a></h3>
+
+
+<h3>Lecture Notes</h3>
+<ul>
+<li> <p><a href="ece18898G_notes/ece18898g_introduction.pdf">Lecture 1: Introduction</a><br>
+<i>Readings:</i> [<a href="https://link.springer.com/content/pdf/10.1007%2F978-0-8176-4948-7_1.pdf">Foucart and Rauhut, Chapter 1</a>] </p>
+<li> <p><a href="ece18898G_notes/ece18898g_sparse_representations.pdf">Lecture 2: Sparse Representations</a><br>
+<i>Readings:</i> [<a href="https://link.springer.com/content/pdf/10.1007%2F978-0-8176-4948-7_2.pdf">Foucart and Rauhut, Chapter 2</a>], [<a href="http://epubs.siam.org/doi/pdf/10.1137/0149053">Donoho and Stark</a>], [<a href="https://statweb.stanford.edu/~donoho/Reports/1999/IADUP.pdf">Donoho and Huo</a>], [<a href="http://www.pnas.org/content/100/5/2197.full.pdf">Donoho and Elad</a>] </p>
+<li> <p><a href="ece18898G_notes/ece18898g_sparse_recovery_L1theory.pdf">Lecture 3: Sparse Recovery with L1 minimization: Theory</a><br>
+<i>Readings:</i> [<a href="https://pdfs.semanticscholar.org/b39b/5e34eae177bca20e3f3d511827a2774c08a9.pdf">Baraniuk</a>], [<a href="https://statweb.stanford.edu/~candes/papers/RIP.pdf">Candes</a>],  [<a href="https://statweb.stanford.edu/~candes/papers/IncoherenceCS.pdf">Candes and Plan</a>] </p>
+<li> <p><a href="ece18898G_notes/ece18898g_sparse_recovery_L1algorithm.pdf">Lecture 4: Sparse Recovery with L1 minimization: Algorithms</a><br>
+<i>Readings:</i> [<a href="https://statweb.stanford.edu/~tibs/lasso/lasso.pdf">LASSO</a>], [<a href="http://web.stanford.edu/~boyd/papers/prox_algs.html">Proximal Methods</a>], [<a href="https://ie.technion.ac.il/~becka/papers/71654.pdf">FISTA</a>]</p>
+
+<li> <p><a href="ece18898G_notes/ece18898g_sparse_recovery_iterative.pdf">Lecture 5: Sparse Recovery with Greedy Pursuits</a><br>
+<i>Readings:</i> [<a href="http://users.cms.caltech.edu/~jtropp/papers/TG07-Signal-Recovery.pdf">OMP</a>], [<a href="https://arxiv.org/abs/0803.2392">CoSaMP</a>], [<a href="https://arxiv.org/pdf/0805.0510.pdf">IHT</a>]</p>
+
+<li> <p><a href="ece18898G_notes/ece18898g_lowrank_matrix_recovery.pdf">Lecture 6: Low-Rank Matrix Recovery via Convex Relaxations</a><br>
+<i>Readings:</i> [<a href="https://people.eecs.berkeley.edu/~brecht/papers/07.rfp.lowrank.pdf">Rank Minimization</a>], [<a href="https://statweb.stanford.edu/~candes/papers/MatrixCompletion.pdf">Matrix Completion</a>], [<a href="papers/lowrank_SPM_final.pdf">Overview Paper #1</a>], [<a href="https://arxiv.org/pdf/1601.06422.pdf">Overview Paper #2</a>]</p>
+
+<li> <p><a href="ece18898G_notes/ece18898g_nonconvex_lowrank_recovery.pdf">Lecture 7: Low-Rank Matrix Recovery via Nonconvex Optimization</a> <br>
+<i>Readings:</i> [<a href="https://arxiv.org/pdf/1411.8003.pdf">Sun and Luo</a>], [<a href="https://arxiv.org/abs/1605.07272">No Spurious Local Minima</a>], [<a href="papers/lowrank_SPM_final.pdf">Overview Paper</a>]
+
+<li> <p><a href="ece18898G_notes/ece18898g_robust_PCA.pdf">Lecture 8: Robust Principal Component Analysis</a> <br>
+<i>Readings:</i> [<a href="https://statweb.stanford.edu/~candes/papers/RobustPCA.pdf">Convex RPCA</a>], [<a href="https://arxiv.org/abs/1605.07784">Nonconvex RPCA</a>] 
+
+<li> <p><a href="ece18898G_notes/ece18898g_graphical_model.pdf">Lecture 9: Gaussian Graphical Models</a> <br>
+<i>Readings:</i> [<a href="http://statweb.stanford.edu/~tibs/ftp/graph.pdf">Graphical LASSO</a>], [<a href="http://www-stat.wharton.upenn.edu/~tcai/paper/Precision-Matrix.pdf">CLIME</a>], [<a href="https://arxiv.org/abs/1008.1290">Latent Variable Graphical Model</a>]  
+
+<li> <p><a href="ece18898G_notes/ece18898g_phase_retrieval.pdf">Lecture 10: Phase Retrieval</a> <br>
+<i>Readings:</i> [<a href="https://arxiv.org/pdf/1109.4499.pdf">Phaselift</a>], [<a href="https://arxiv.org/pdf/1310.0807.pdf">Covariance Sketching</a>], [<a href="https://arxiv.org/pdf/1407.1065.pdf">Wirtinger Flow</a>], [<a href="https://arxiv.org/pdf/1711.10467.pdf">Implicit Regularization</a>]  
+
+<li> <p><a href="ece18898G_notes/ece18898g_super_resolution.pdf">Lecture 11: Super Resolution</a> <br>
+<i>Readings:</i> [<a href="https://www.nobelprize.org/nobel_prizes/chemistry/laureates/2014/advanced-chemistryprize2014.pdf">Super-resolution Microscopy</a>], [<a href="https://arxiv.org/pdf/1012.0621.pdf">Atomic Norm</a>], [<a href="https://statweb.stanford.edu/~candes/papers/super-res.pdf">Super Resolution via TV norm</a>]
+
+<li> <p><a href="ece18898G_notes/ece18898g_neural_networks.pdf">Lecture 12: Neural Networks</a> <br>
+<i>Readings:</i> [<a href="https://www.nature.com/articles/nature14539">intro to deep learning</a>], [<a href="https://arxiv.org/pdf/1607.06534.pdf">Landscape of ERM</a>], [<a href="https://pdfs.semanticscholar.org/72f8/1f38b2c445f3a5900e5b7cf47baa94d44aac.pdf">Exponentially many local minima</a>]
+
+</ul>
+
+
+ 
+
+<h3>Homework Problems</h3>
+<ul> 
+<li> <p><a href="ece18898G_notes/hw1_spring2018.pdf">Homework 1</a><br></p>
+<li> <p><a href="ece18898G_notes/hw2_spring2018.pdf">Homework 2</a><br></p>
+<li> <p><a href="ece18898G_notes/hw3_spring2018.pdf">Homework 3</a><br></p>
+<li> <p><a href="ece18898G_notes/hw4_spring2018.pdf">Homework 4</a><br></p>
+</ul>
+
+
+
+<h3>Suggested Readings for Presentations/Projects</h3>
+
+You can also select another paper upon the instructor's approval.
+
+<ol>
+<li><p>&lsquo;&lsquo;The Dantzig selector: Statistical estimation when <i>p</i> is much larger than <i>n</i>,&rsquo;&rsquo; E. Candes and T. Tao, <i>The Annals of Statistics</i>, 2007.</p>
+</li>
+<li><p>&lsquo;&lsquo;The convex geometry of linear inverse problems,&rsquo;&rsquo; V. Chandrasekaran, B. Recht, P. Parrilo, and A. Willsky, <i>Foundations of Computational mathematics</i>, 2012.</p>
+<li><p>&lsquo;&lsquo;Rank Awareness in Joint Sparse Recovery,&lsquo;&lsquo; M. E. Davies, Y. C. Eldar, <i>IEEE Transactions on Information Theory</i>, 2012.
+<li><p>&lsquo;&lsquo;Convex recovery of a structured signal from independent random linear measurements,&rsquo;&rsquo; J. A. Tropp, <i>Sampling Theory, a Renaissance: Compressive sampling and other developments</i>, 2015.</p>
+<li><p>&lsquo;&lsquo;Near-optimal adaptive compressed sensing,&lsquo;&lsquo; M. Malloy, R. Nowak, <i>IEEE Transactions on Information Theory</i>, 2014.</p>
+<li><p>&lsquo;&lsquo;A unified framework for the analysis of regularized <i>M</i>-estimators,&lsquo;&lsquo; S. Negahban, P. Ravikumar, M. J. Wainwright, B. Yu, <i>Statistical Science</i>, 2012.</p>
+
+<li><p>&lsquo;&lsquo;Localization from Incomplete Noisy Distance Measurements,&rsquo;&rsquo; A. Javanmard and A. Montanari, <i>Foundations of Computational mathematics</i>, 2012.</p>
+ 
+<li><p>&lsquo;&lsquo;Tensor decompositions for learning latent variable models,&rsquo;&rsquo; A. Anandkumar, R. Ge, D. Hsu, S. M. Kakade, M. Telgarsky, <i>Journal of Machine Learning Research</i>, 2014.</p>
+
+<li><p>&lsquo;&lsquo;A geometric analysis of subspace clustering with outliers,&lsquo;&lsquo; M. Soltanolkotabi and E. J. Candes, <i>The Annals of Statistics</i>, 2013.</p>
+<li><p>&lsquo;&lsquo;Solving random quadratic systems of equations is nearly as easy as solving linear systems,&lsquo;&lsquo; Y. Chen and E. J. Candes. <i>Communications on Pure and Applied Mathematics</i>, 2015.</p>
+<li><p>&lsquo;&lsquo;Blind deconvolution using convex programming,&rsquo;&rsquo; A. Ahmed, B. Recht, J. Romberg, <i>IEEE Transactions on Information Theory</i>, 2014.</p>
+<li><p>&lsquo;&lsquo;Designing Statistical Estimators That Balance Sample Size, Risk, and Computational Cost,&lsquo;&lsquo; J. J. Bruer, J. A. Tropp, V. Cevher, and S. Becker, <i> IEEE Journal of Selected Topics in Signal Processing</i>, 2015.
+<li><p>&lsquo;&lsquo;1-bit Matrix Completion,&rsquo;&rsquo; M. A. Davenport, Y. Plan, E. van den Berg, M. Wootters, <i>Information and Inference: A Journal of the IMA </i>, 2014.</p>
+<li><p>&lsquo;&lsquo;Achieving Exact Cluster Recovery Threshold via Semidefinite Programming,&lsquo;&lsquo; B. Hajek Y. Wu, J. Xu, <i>IEEE Transactions on Information Theory</i>, 2014.</p>
+<li><p>&lsquo;&lsquo;The landscape of empirical risk for non-convex losses,&rsquo;&rsquo; S. Mei, Y. Bai, and A. Montanari, <i>arXiv preprint arXiv:1607.06534</i>, 2016.</p>
+</li>
+<li><p>&lsquo;&lsquo;Implicit Regularization in Nonconvex Statistical Estimation: Gradient Descent Converges Linearly for Phase Retrieval, Matrix Completion and Blind Deconvolution,&rsquo;&rsquo; C. Ma, K. Wang, Y. Chi, Y. Chen, <i>arXiv:1711.10467</i>, 2017.</p>
+
+
+
+</ol>
+
+
+
+<p><br /><br /></p>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
