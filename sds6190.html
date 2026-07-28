@@ -1,0 +1,180 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+<link rel="stylesheet" href="jemdoc.css" type="text/css">
+<title>S&amp;DS 6190</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tbody><tr valign="top">
+<td id="layout-menu">
+<div class="menu-category"><img class="menu" src="yale_logo.png" width="100px" align="center"></div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-item"><a href="research.html">Research</a></div>
+<div class="menu-item"><a href="publications.html">Papers</a></div>
+<div class="menu-item"><a href="talks.html">Talks</a></div>
+<div class="menu-item"><a href="teaching.html" class="current">Teaching</a></div>
+<div class="menu-item"><a href="group.html">Group</a></div>
+<div class="menu-item"><a href="service.html">Service</a></div>
+<div class="menu-item"><a href="news.html">News</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Yuejie Chi</h1>
+</div>
+
+<h2>S&amp;DS 6190: Sequential Decision Making: Theoretical Foundations and Modern Applications</h2>
+
+<p><img src="photos/sds6190_rl_cartoon.png" width="250" style="float:right; margin:0px 10px 5px 10px;" /></p>
+<p>Sequential decision making in the face of uncertainty has garnered growing interest in recent years, with successes in a multitude of applications such as recommendation systems, robotics, and AI systems. This course aims to cover important theoretical and algorithmic foundations under the paradigms of bandits and reinforcement learning (RL), and discuss research issues arising from their modern applications in generative AI. We will cover multiple important topics including stochastic bandits, adversarial bandits, planning in Markov decision processes, online and offline RL, policy optimization, and multi-agent RL, gravitating our discussions around issues such as sample complexity, computational efficiency, and function approximation. We will also illustrate how RL is used to enable reasoning and alignment of foundation models, along with related (open) research questions.</p>
+
+
+<h3><a href="sds6190_notes/SDS6190_Syllabus_Fall_2026.pdf">Course Syllabus</a></h3>
+
+
+<h3>Recommended Readings</h3>
+<ul>
+<li> <p><a href="https://rltheorybook.github.io/rltheorybook_ABJKS.pdf">Reinforcement Learning: Theory and Algorithms</a>, by Agarwal, Brantley, Jiang, Kakade, and Sun</p>
+<li> <p><a href="http://incompleteideas.net/book/the-book.html">Reinforcement learning: An introduction</a>, by Sutton and Barto</p>
+<li> <p><a href="https://tor-lattimore.com/downloads/book/book.pdf">Bandit Algorithms</a>, by Lattimore and Szepesvari</p>
+<li> <p><a href="https://davidstarsilver.wordpress.com/teaching/">Reinforcement Learning</a>, lecture notes by Silver </p>
+<li><p><a href="monographs/StatisticalRL_FnT.pdf">Sample Complexity of Reinforcement Learning: A Non-Asymptotic Perspective</a>, by Chen, Chi, Fan, Li, Wei, and Yan</p>
+
+</ul>
+
+
+<h3>Course Schedule</h3>
+
+<p>This is a provisional schedule and may be updated as the semester proceeds.</p>
+<table border="1" cellpadding="6" cellspacing="0" style="border-collapse: collapse;">
+<tr>
+<td><b>Week</b></td>
+<td><b>Date</b></td>
+<td><b>Topic</b></td>
+<td><b>Recommended Reading</b></td>
+<td><b>Deliverables</b></td>
+</tr>
+<tr>
+<td>1</td>
+<td>Sep. 8</td>
+<td>Introduction and logistics; stochastic bandits [<a href="sds6190_notes/lecture1.pdf">Lecture 1</a>]</td>
+<td>SB, Chapter 1; LS, Chapters 4 and 7</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Sep. 15</td>
+<td>Adversarial bandits and lower bounds</td>
+<td>LS, Chapters 11 and 13-16</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Sep. 22</td>
+<td>MDP and dynamic programming</td>
+<td>Silver, Lectures 1-3; CCFLWY, Chapter 2</td>
+<td>Project proposal 1<sup>st</sup> draft</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sep. 29</td>
+<td>Simulator setting: evaluation and planning</td>
+<td>CCFLWY, Chapter 3</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Oct. 6</td>
+<td>Online RL</td>
+<td>CCFLWY, Chapter 4</td>
+<td>Project proposal 2<sup>nd</sup> draft</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Oct. 13</td>
+<td>Imitation learning and offline RL</td>
+<td>CCFLWY, Chapter 5; ABJKS, Chapter 13</td>
+<td>Midterm presentation draft</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Oct. 20</td>
+<td><b>Midterm presentation and peer feedback</b></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Oct. 27</td>
+<td>Policy optimization in RL</td>
+<td>ABJKS, Chapters 9-10</td>
+<td>Project proposal final version</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Nov. 3</td>
+<td>Multi-agent RL (MARL)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Nov. 10</td>
+<td>RLHF</td>
+<td></td>
+<td>Project 1<sup>st</sup> milestone</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Nov. 17</td>
+<td>RLVR</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Nov. 24</td>
+<td><b>No class: November recess</b></td>
+<td></td>
+<td>Project 2<sup>nd</sup> milestone</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Dec. 1</td>
+<td>Guest lecture (tentative)</td>
+<td></td>
+<td>Final presentation draft due</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Dec. 8</td>
+<td><b>Final project presentation</b></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Finals</td>
+<td>Dec. 15-22</td>
+<td></td>
+<td></td>
+<td>Final project report due</td>
+</tr>
+</table>
+
+
+
+
+<p><br /><br /></p>
+<div id="footer">
+<div id="footer-text">
+Page generated by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
