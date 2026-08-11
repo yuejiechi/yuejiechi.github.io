@@ -30,10 +30,7 @@
 <p></p>
 
 <p><img src="photos/maze.png" width="250" style="float:right; margin:0px 10px 5px 10px;" /></p>
-<p>Reinforcement learning (RL), which is frequently modeled as
-learning and decision making in Markov decision processes (MDP), is garnering growing interest in recent
-years due to its remarkable success in practice. A core objective of RL is to search for a policy - based on
-a collection of noisy data samples - that approximately maximizes expected rewards in an MDP, without direct access to a precise description of the underlying model. In contemporary applications, it is increasingly more common to encounter environments with prohibitively large state and action space, thus challenging the paradigm of RL in terms of both sample and computation efficiencies. 
+<p>Reinforcement learning (RL), which is frequently modeled as learning and decision making in Markov decision processes (MDP), is garnering growing interest in recent years due to its remarkable success in practice. A core objective of RL is to search for a policy - based on a collection of noisy data samples - that approximately maximizes expected rewards in an MDP, without direct access to a precise description of the underlying model. In contemporary applications, it is increasingly more common to encounter environments with prohibitively large state and action space, thus challenging the paradigm of RL in terms of both sample and computation efficiencies. 
 
 <p>Broadly speaking, there are two common algorithmic approaches: model-based and model-free. In the model-based approach, one first learns to describe the unknown model using the data samples in hand, and then leverages the fitted model to perform planning - a task that can be accomplished by resorting to Bellman's principle of optimality. In comparison, the model-free approach attempts to compute the optimal policy (and the optimal value function) without learning the model explicitly, which lends itself to scenarios when a realistic model is difficult to construct or changes on the fly. There is a great interest in characterizing the trade-offs between sample complexity, computation complexity, and statistical accuracy of RL algorithms, and to design improved algorithms that achieve better trade-offs and meet new considerations. At the same time, we are actively pursuing applications of RL in real-world science and engineering applications such as wireless networks, graph mining and more.</p>
 
@@ -118,6 +115,9 @@ a collection of noisy data samples - that approximately maximizes expected rewar
 <h3> Robust RL </h3> 
 
 <ul> 
+
+<li><p><a href="https://arxiv.org/abs/2608.06545">Robust Average-Reward Markov Decision Processes: Minimax-Optimal Learning via Plug-in Reductions</a> <a href="https://arxiv.org/abs/2608.06545">[Arxiv]</a>
+<br>Y. Yang, Y. Chen, and Y. Chi, <i>preprint</i>. </p> 
 
 <li><p><a href="https://pubsonline.informs.org/doi/abs/10.1287/opre.2025.2240">The Curious Price of Distributional Robustness in Reinforcement Learning with a Generative Model</a> <a href="https://arxiv.org/abs/2305.16589">[Arxiv]</a>
 <br>L. Shi, G. Li, Y. Wei, Y. Chen, M. Geist, and Y. Chi, <i>Operations Research</i>, accepted. Short version at NeurIPS 2023.
